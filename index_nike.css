@@ -1,0 +1,512 @@
+main{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minimax($WIDTH, 1fr));
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	padding:0;
+	margin:0;
+	background-color: #f4f4f4;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+  min-height: 200px
+}
+
+
+
+ul{
+	margin:0;
+	padding: 0;
+}
+
+header {
+	background: #000000;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 100px;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+  #branding{
+    display: block;
+}
+
+header li{
+	float: center;
+	display: inline;
+	padding: 0 20px 0 20px; 
+}
+
+header nav {
+	text-align-last: center;
+	margin: 2em;
+}
+
+.highlight, header .current a{
+	color: #c31f48;
+	font-weight: bold;
+}
+
+.highlight2{
+	color: #f2b9b6;
+	font-weight: bold;
+}
+
+header a:hover {
+	color:#c31f48;
+	font-weight: bolder;
+	text-decoration: underline;
+
+}
+
+#branding img {
+	float:left;
+	width: 90px;
+	height: 90px;
+}
+
+#branding h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+#showcase .container{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	min-height: 400px;
+	object-fit: cover;
+	background: url('img/nike-showcase.jpg') no-repeat -400px -430px;
+}
+
+#showcase h1 {
+	font-style: 24px;
+	color: #ffffff;
+	font-weight: bold;
+	margin: 2em;
+}
+
+#calendar .img_cal img{
+	width: 80px; 
+	height:60px;
+	margin-top: -5px;
+}
+
+/*boxes*/
+
+#releaseDateBoxes h1 {
+  text-align: center;
+  margin:0;
+  padding-bottom: 20px;
+  font-size: 45px;  
+  background: #000000;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+}
+
+
+#releaseDateBoxes {
+	margin-top: 20px;
+    margin-bottom: 20px;
+  align-self: center;
+}
+
+#releaseDateBoxes .box {
+  display: grid;
+  background-color: #000000;
+  color: #ffffff;
+  float: left;
+  width: auto;
+  height: 495.55px;
+  margin-left: 1em;
+  margin-top: 1em;
+  padding: 10px;
+}
+
+#releaseDateBoxes .box img {
+  width: 300px;
+}
+
+.releaseDateBoxds .box h3 h4 p {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*search Bar*/
+
+#search {
+background-color: #000000;
+padding-bottom: 20px;
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background-color: #c31f48 ;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: black;
+    color: white;
+}
+/*calendar*/
+
+#calendar-wrap h1 {
+	text-align: center;
+	margin:0;
+	padding-bottom: 20px;
+	font-size: 50px;
+}
+
+#calendar a {
+	color: #8e352e;
+	text-decoration: none;
+}
+
+#calendar ul {
+	list-style: none;
+	padding: ;
+	margin: 0;
+	width: 100%;
+}
+/*boxes*/
+#calendar li {
+	display: block;
+	float: left;
+	width:14.342%;
+	height:14.342%;
+	padding: 5px;
+	box-sizing:border-box;
+	border: 1px solid #f6f6f6;
+	margin-right: -1px;
+	margin-bottom: 0px;
+}
+
+#calendar ul.weekdays {
+	min-height: 30px;
+	background: #c31f48;
+}
+
+#calendar ul.weekdays li {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	border: none !important;
+	padding: 4px 6px;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+#calendar .days li {
+	height: 180px;
+	background-color: #ffffff;
+}
+
+#calendar .container .days li:hover {
+	background: #e1dede;
+}
+
+/*circular date top right*/
+#calendar .date {
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 4px;
+	background: #000000;
+	color: #fff;
+	width: 20px;
+	border-radius: 50%;
+	float: right;
+}
+/*Event Box*/
+#calendar .event {
+	clear: both;
+	display: block;
+	font-size: 13px;
+	padding: 5px;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	line-height: 14px;
+	background: #f6f6f6;
+	color: #009aaf;
+	text-decoration: none;
+}
+/*Event Title*/
+#calendar .event-desc {
+	color: #000000;
+	margin: 3px 0 7px 0;
+	text-decoration: none;	
+}
+
+#calendar .other-month {
+	background: #f5f5f5;
+	color: #666;
+}
+
+/*footer*/
+#footer_icons img {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+}
+.site-footer
+{
+  background-color:#000000;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/* ============================
+				Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+	#calendar .weekdays, #calendar .other-month {
+		display: none;
+	}
+
+	#calendar li {
+		height: auto !important;
+		border: 1px solid #ededed;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: -1px;
+	}
+
+	#calendar .date {
+		float: none;
+	}
+}
+
+li#calendar {
+transition: transform .2s;
+}
+
+#calendar li:hover { 
+   background-color: rgba(255, 0, 0, 0.4);
+   transform: scale(1.2);
+}
